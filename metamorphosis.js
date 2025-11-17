@@ -66,6 +66,7 @@ function initDropzone(dropzone) {
 
 function handleDragStart(e) {
     game.dragged = e.currentTarget;
+    game.dragged.add
     console.log("Drag start of", game.dragged);
 }
 
@@ -80,6 +81,9 @@ function handleDragOver(e) {
 
 function handleDragEnter(e) {
     console.log("Drag enter of", e.currentTarget);
+    ui.slots.forEach(function (slot) {
+        slot.classList.add("active")
+    })
 }
 
 function handleDragLeave(e) {

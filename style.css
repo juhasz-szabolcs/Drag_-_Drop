@@ -43,6 +43,11 @@ body {
     min-width: 130px;
 }
 
+.card-slot.active{
+    background: #86989B;
+    border: 4px solid #86989B;
+}
+
 .card-slot:empty {
     /*This only works if the tag is really empty and there is not even whitespace inside*/
     border: 4px solid #cdcdcd;
